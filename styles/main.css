@@ -1,0 +1,71 @@
+main {
+  flex: 1;
+  display: flex;
+
+  background-image: url('/assets/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__content {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto auto 0;
+  padding-top: 24px;
+  padding-bottom: 228px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main__content .logo {
+  width: 250px;
+  height: auto;
+}
+
+.main__content strong {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  margin: 24px 0 32px;
+}
+
+.main__content .controll {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.controll button {
+  display: flex;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: var(--tertiary);
+}
+
+.controll button:disabled {
+  background: var(--primary);
+}
+
+.controll button svg {
+  margin: auto;
+
+  width: 22px;
+  height: auto;
+}
+
+.controll button svg path {
+  stroke: var(--background);
+}
+
+.controll span {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}

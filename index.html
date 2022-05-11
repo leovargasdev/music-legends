@@ -12,9 +12,83 @@
     <link rel="stylesheet" href="./styles/global.css" />
   </head>
 
-  <body>
-    <p style="font-size: 32px">Music Legends</p>
-    <img src="/assets/icons/heart.svg" onload="SVGInject(this)" />
+  <body> 
+    <div class="app">
+      <header>
+        <div class="header__content">
+          <nav>
+            <ul class="navigation">
+              <li>
+                <a href="/">Início</a>
+              </li>
+              <li>
+                <a href="/">Buscar</a>
+              </li>
+              <li class="active">
+                <a href="/">Suas bibliotecas</a>
+              </li>
+            </ul>
+          </nav>
+    
+          <h1>music legends</h1>
+    
+          <div class="user">
+            <span>Leo Vargas</span>
+            <div class="user__avatar">
+              <img src="https://github.com/leovargasdev.png" alt="Avatar do usuário">
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <main>
+        <div class="main__content">
+          <img class="logo" src="/assets/logo.png" alt="Logo da liga das lendas">
+          <strong>riot games</strong>
+
+          <div class="controll">
+            <button type="button" disabled>
+              <img src="/assets/icons/chevron-left.svg" alt="Ìcone seta para esquerda"  onload="SVGInject(this)">
+            </button>
+            <span>1/20</span>
+            <button type="button">
+              <img src="/assets/icons/chevron-right.svg" alt="Ìcone seta para direita" onload="SVGInject(this)">
+            </button>
+          </div>
+        </div>
+      </main>
+  
+
+      <footer>
+        <span class="timeline"></span>
+
+        <div class="footer__content">
+          <div class="music">
+            <img src="/assets/icons/heart.svg" alt="Ìcone de coração" onload="SVGInject(this)">
+            <h2>Warriors</h2>
+            <h3>Riot games ft. Imagine Dragons
+          </div>
+  
+          <div class="player">
+            <img src="/assets/icons/repeat.svg" alt="Ìcone da ação de repetição" onload="SVGInject(this)">
+
+            <div class="player__main">
+              <img src="/assets/icons/chevron-left.svg" alt="Ìcone seta para esquerda" onload="SVGInject(this)">
+              <button type="button">
+                <img src="/assets/icons/play.svg" alt="Ìcone player" onload="SVGInject(this)">
+              </button>
+              <img src="/assets/icons/chevron-right.svg" alt="Ìcone seta para direita" onload="SVGInject(this)">
+            </div>
+            <img src="/assets/icons/loop.svg" alt="Ìcone da ação de looping" onload="SVGInject(this)">
+          </div>
+  
+          <div class="controller">
+            <img src="/assets/icons/volume.svg" alt="Ìcone para controlar o volume" onload="SVGInject(this)">
+            <img src="/assets/icons/minimize.svg" alt="Ìcone para minimizar a aplicação" onload="SVGInject(this)">
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
   
 </html>

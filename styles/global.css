@@ -1,3 +1,8 @@
+@import url('./app.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./main.css');
+
 @font-face {
   font-family: "GT Eesti Pro Display";
   src: url("/fonts/GT-Eesti-Display-Regular.otf");
@@ -14,6 +19,12 @@
   font-display: swap;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -27,7 +38,12 @@
 }
 
 :root {
-  --primary: #333;
+  --primary: #C0C0C0;
+  --secondary: #2EF4CC; 
+  --tertiary: #F1F0F0; 
+
+  --background: #14061F;
+  --background-light: #200C30;
 }
 
 body, button, textarea, input {
@@ -47,4 +63,3 @@ button {
 button:hover {
   cursor: pointer;
 }
-/*# sourceMappingURL=global.css.map */
