@@ -112,3 +112,45 @@ footer {
   width: 32px;
   height: auto;
 }
+
+@media(max-width: 1080px) {
+  .music {
+    gap: 6px 18px;
+  }
+
+  .player {
+    column-gap: 24px;
+  }
+
+  .player > svg {
+    width: 24px;
+  }
+
+  .player .player__main {
+    column-gap: 6px;
+  }
+
+  .controller {
+    column-gap: 24px;
+  }
+  
+  .controller svg {
+    width: 24px;
+  }
+}
+
+@media(max-width: 768px) {
+  .controller, .music {
+    display: none;
+    visibility: hidden;
+  }
+
+  .player {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .player .player__main {
+    column-gap: 28px;
+  }
+}

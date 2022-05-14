@@ -12,11 +12,17 @@ main {
   width: 100%;
   max-width: 1440px;
   margin: auto auto 0;
-  padding-top: 24px;
-  padding-bottom: 228px;
+  padding: 24px 24px 228px;
 
   display: flex;
   flex-direction: column;
+
+}
+
+@media(max-width: 1080px) {
+  .main__content {
+    padding: 24px 24px 150px;
+  }
 }
 
 .main__content .logo {
