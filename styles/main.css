@@ -80,34 +80,13 @@ main {
   }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 768px) {
   .main__content {
     padding: 0 24px 72px;
   }
 
-  .main__content .logo {
-    width: 140px;
-  }
-
-  .main__content strong {
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-  
-    margin: 16px 0 24px;
-  }
-
   .main__content .controll {
-    column-gap: 30px;
-    margin-bottom: 220px;
-  }
-
-  .controll button {
-    width: 32px;
-    height: 32px;
-  }
-
-  .controll button svg {
-    width: 16px;
+    margin-bottom: 150px;
   }
 
   .music__mobile {
@@ -140,4 +119,32 @@ main {
     text-transform: uppercase;
     opacity: 0.6;
   }
+}
+
+@media(max-width: 650px) {
+  .main__content .logo {
+    width: 140px;
+  }
+
+  .main__content strong {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  
+    margin: 16px 0 24px;
+  }
+
+  .main__content .controll {
+    column-gap: 30px;
+    margin-bottom: 220px;
+  }
+
+  .controll button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .controll button svg {
+    width: 16px;
+  }
+
 }
