@@ -54,46 +54,52 @@
           <strong>riot games</strong>
 
           <div class="controll">
-            <button type="button" disabled>
+            <button type="button" onclick="changeMusic(-1)">
               <img src="/assets/icons/chevron-left.svg" alt="Ìcone seta para esquerda"  onload="SVGInject(this)">
             </button>
-            <span>1/20</span>
-            <button type="button">
+            <span></span>
+            <button type="button" onclick="changeMusic(1)">
               <img src="/assets/icons/chevron-right.svg" alt="Ìcone seta para direita" onload="SVGInject(this)">
             </button>
           </div>
 
           <div class="music__mobile">
-            <h2>
-              Warriors
+            <div>
+              <h2></h2>
               <img src="/assets/icons/heart.svg" alt="Ìcone de coração" onload="SVGInject(this)">
-            </h2>
+            </div>
             
-            <h3>Riot games ft. Imagine Dragons
+            <h3></h3>
           </div>
         </div>
       </main>
   
-
       <footer>
-        <span class="timeline"></span>
+        <span id="timeline"></span>
 
         <div class="footer__content">
           <div class="music">
             <img src="/assets/icons/heart.svg" alt="Ìcone de coração" onload="SVGInject(this)">
-            <h2>Warriors</h2>
-            <h3>Riot games ft. Imagine Dragons
+            <h2></h2>
+            <h3></h3>
           </div>
   
           <div class="player">
             <img src="/assets/icons/repeat.svg" alt="Ìcone da ação de repetição" onload="SVGInject(this)">
 
             <div class="player__main">
-              <img src="/assets/icons/chevron-left.svg" alt="Ìcone seta para esquerda" onload="SVGInject(this)">
-              <button type="button">
-                <img src="/assets/icons/play.svg" alt="Ìcone player" onload="SVGInject(this)">
+              <button type="button" onclick="changeMusic(-1)">
+                <img src="/assets/icons/chevron-left.svg" alt="Ìcone seta para esquerda" onload="SVGInject(this)">
               </button>
-              <img src="/assets/icons/chevron-right.svg" alt="Ìcone seta para direita" onload="SVGInject(this)">
+
+              <button type="button" onclick="playMusic()" id="button__play" class="play">
+                <img src="/assets/icons/play.svg" alt="Ìcone player" onload="SVGInject(this)">
+                <img src="/assets/icons/pause.svg" alt="Ìcone player" onload="SVGInject(this)">
+              </button>
+
+              <button type="button" onclick="changeMusic(1)">
+                <img src="/assets/icons/chevron-right.svg" alt="Ìcone seta para direita" onload="SVGInject(this)">
+              </button>
             </div>
             <img src="/assets/icons/loop.svg" alt="Ìcone da ação de looping" onload="SVGInject(this)">
           </div>
@@ -106,15 +112,7 @@
       </footer>
     </div>
 
-
-    <script>
-      function handleToggle() {
-        const buttonToggle = document.getElementById('button__toggle')
-        const navigation = document.getElementById('navigation')
-        buttonToggle.classList.toggle('active')
-        navigation.classList.toggle('active')
-      }
-    </script>
+    <script src="./scripts/index.js"></script>
   </body>
   
 </html>

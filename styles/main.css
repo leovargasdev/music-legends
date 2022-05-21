@@ -96,11 +96,13 @@ main {
     visibility: visible;
   }
 
-  .music__mobile h2 {
+  .music__mobile div {
     display: flex;
     align-items: center;
     column-gap: 24px;
+  }
 
+  .music__mobile h2 {
     font-size: 2rem;
     color: var(--tertiary);
     line-height: 2.375rem;

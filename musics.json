@@ -1,5 +1,9 @@
 [
   {
+    "name": "Warriors",
+    "artist": "Imagine Dragons"
+  },
+  {
     "name": "Set It Off",
     "artist": "League of Legends"
   },
@@ -21,10 +25,6 @@
   },
   {
     "name": "Believer",
-    "artist": "Imagine Dragons"
-  },
-  {
-    "name": "Warriors",
     "artist": "Imagine Dragons"
   },
   {
@@ -56,7 +56,7 @@
     "artist": "Against The Current"
   },
   {
-    "name": "Imaginary Fire - feat.Greg Puciato",
+    "name": "Imaginary Fire",
     "artist": "Carpenter Brut"
   },
   {
@@ -84,7 +84,7 @@
     "artist": "Jasmine Clarke"
   },
   {
-    "name": "Nasty - Foreign Air Remix",
+    "name": "Nasty (Remix)",
     "artist": "Bryce Fox"
   },
   {
@@ -108,7 +108,7 @@
     "artist": "Ylona Garcia"
   },
   {
-    "name": "Story Of My Life (feat. Trippie Redd)",
+    "name": "Story Of My Life",
     "artist": "ILLENIUM"
   },
   {

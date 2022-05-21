@@ -4,20 +4,20 @@ footer {
   position: relative;
 }
 
-.timeline {
+#timeline {
   position: absolute;
   top: -2px;
   left: 0;
 
   display: flex;
   justify-content: flex-end;
-  width: 400px;
+  width: 0;
   height: 4px;
 
   background: linear-gradient(90.35deg, #4AC08F 2.49%, #2FB4FF 101.2%, #2FB4FF 101.2%);
 }
 
-.timeline::before {
+#timeline::before {
   content: '';
   display: block;
 
@@ -86,6 +86,10 @@ footer {
 }
 
 .player .player__main button {
+  background: transparent;
+}
+
+#button__play {
   display: flex;
 
   width: 48px;
@@ -95,10 +99,19 @@ footer {
   background: var(--background-light);
 }
 
-.player .player__main button svg {
+#button__play svg {
   width: 18px;
   height: auto;
   margin: auto;
+
+  display: none;
+  opacity: 0;
+}
+
+#button__play.play svg:first-child,
+#button__play.pause svg:last-child {
+  opacity: 1;
+  display: block;
 }
 
 .controller {
